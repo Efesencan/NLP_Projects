@@ -4,5 +4,10 @@ Pretitles:
 
 Names:
 	ismailbaskin/turkce_isimler.sql
-	https://raw.githubusercontent.com/eoner/turkce_isimler/master/tr_isim_erkek.csv
+	#https://raw.githubusercontent.com/eoner/turkce_isimler/master/tr_isim_erkek.csv
+
+Location:
+	https://tr.wikipedia.org/wiki/T%C3%BCrkiye%27nin_illeri (Türkiye şehirleri)
+	https://github.com/FinNLP/cities-list/blob/master/list.txt (World Cities)
+	
 

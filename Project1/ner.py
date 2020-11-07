@@ -4,6 +4,7 @@ import re
 
 
 inputFile = open("input.txt", "r", encoding='utf-8')
+# PERSON RELATED FILES
 with open("updated_names.txt", encoding='utf-8') as name:
     name_content = [line.rstrip() for line in name]
 
@@ -13,20 +14,20 @@ with open("pre_titles.txt", encoding='utf-8') as pre_titles:
 with open("post_titles.txt", encoding='utf-8') as post_titles:
     post_titles = [line.rstrip() for line in post_titles]
 
+# DATE RELATED FILES
 with open("day.txt", encoding='utf-8') as date:
     day = [line.rstrip() for line in date]
 
 with open("month.txt", encoding='utf-8') as date:
     month = [line.rstrip() for line in date]
 
-# print(date)
 with open("location.txt", encoding='utf-8') as location:
     location = [line.rstrip() for line in location]
 # print(location)
 
 for line in inputFile:  # iterate for each line
 
-    # RULE for DATES (yılı, ayı, günü)
+    # RULE for DATES (yılı, ayı, günü) ************************************************************************************
 
     if re.search(r'\d+', line):
         match = re.findall(r'\d{2}-\d{2}-\d{1,}', line)
@@ -95,7 +96,7 @@ for line in inputFile:  # iterate for each line
     if(len(match)):
         for date in match:
             print("Date:",date)
-    # RULE for NAME
+    # RULE for NAME *******************************************************************************************
     names = []
     for pre_title in pre_titles:
         match = re.findall(
@@ -104,7 +105,7 @@ for line in inputFile:  # iterate for each line
             for name in match:
                 if name not in names:
                     print("Name:", name)
-                    line = line.replace(name, "")
+                    line = line.replace(pre_title + ' ' + name, "") # updated here
                     names.append(name)
 
     for post_title in post_titles:
@@ -112,7 +113,7 @@ for line in inputFile:  # iterate for each line
         if len(match):
             for name in match:
                 print("Name:", name)
-                line = line.replace(name, "")
+                line = line.replace(name + ' ' + post_title, "")
 
     match = re.findall(r'[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*', line)
     final_name = ''
@@ -138,26 +139,19 @@ for line in inputFile:  # iterate for each line
                         
                         # organizasyon olma ihtimalini göz ardı ediyorum şu an Örn: Efe Şencan Üniversitesi
           
+    # RULE for LOCATION ***************************************************************************************************************
 
 
-
+    # location (şehri/ilçesi/beldesi/mahallesi/apartmanı/caddesi/bölge/), 'de 'da ya bakılabilir
+    # ülkelere ve kısaltmaları eklenecek ()
+    # popular dünya şehirleri eklenecek (yapıldı)
+    # .. Kültür ve Sanat Merkezi / Merkezi'nde , kalemim Efe'de kalmış, üst tiredfen önceki kelime isim mi diyr kontrol et veya belki zaten replace edilmiş olur yukarda
 
     
     
-    """match = re.findall(r'[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*', line)
-    print(match)
-    for capital_words in match:
-        index = capital_words.find(' ')
-        first_name = capital_words[:index]
-        second_name = ""
-        if (index != len(capital_words)-1):
-            second_name = capital_words[index+1::]
-        if first_name in name_content and second_name in name_content:
-            print("Name:", first_name + ' ' + second_name)
-        if first_name in name_content:
-            print("Name:", first_name)
-        if second_name in name_content:
-            print("Name:", second_name)"""
+    
+
+
 
     #match = re.findall(r'leri\s',line)
     #match = re.findall(r'ları')
@@ -165,7 +159,6 @@ for line in inputFile:  # iterate for each line
     #match = re.findall(r'ımız\s[A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*')
     # hiçbi rütbeli kısıma girmediyse buradan isim listesi kontrol edilecek, orda da yoksa organizasyon büyük iht. ve lokasyon, ama kelime organizasyonda
     # da yoksa kendisini ve yanındaki harfe de bakarak default isim kabul edilcek.
-    # Efe topu tuttu. (İsim Listesi gerekecek).
     # Yabancı İsimler
 
-    # location (şehri/ilçesi/beldesi/mahallesi/apartmanı/caddesi/bölge/)
+    

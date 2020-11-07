@@ -4402,7 +4402,6 @@ Sayıl
 Sayılbay
 Sayılgan
 Sayım
-Sayın
 Sayınberk
 Sayınbey
 Sayıner
@@ -8307,7 +8306,6 @@ Sevengün
 Sever
 Sevgen
 Sevgi
-Sevgili
 Sevgim
 Sevginur
 Sevgisun
