@@ -111,6 +111,11 @@ for line in inputFile:  # iterate for each line
     if(len(match)):
         for date in match:
             print("Line "+str(line_count) + ": " + "TIME", date)
+    
+    match = re.findall(r'(\d{4})', line)
+    if(len(match)):
+        for date in match:
+            print("Line "+str(line_count) + ": " + "TIME", date)
 
     # RULE for LOCATION ***************************************************************************************************************
     line = line.strip()
@@ -138,6 +143,17 @@ for line in inputFile:  # iterate for each line
                 else:
                     final = ""
     
+    match = re.findall('([A-ZÇĞİÖŞÜ][a-zçğıöşü]*)li',line)
+    if(len(match)):
+        for i in match:
+            if (i in world_cities) or (i in countries) or (i in turkish_cities) or (i in ilceler):
+                print("Line "+str(line_count) + ": " + "LOCATION", i.strip())
+    
+    match = re.findall('([A-ZÇĞİÖŞÜ][a-zçğıöşü]*)lı',line)
+    if(len(match)):
+        for i in match:
+            if (i in world_cities) or (i in countries) or (i in turkish_cities) or (i in ilceler):
+                print("Line "+str(line_count) + ": " + "LOCATION", i.strip())
 
     # li-li bitişik yazılırmış örneğin Rizeli
     # location (şehri/ilçesi/beldesi/mahallesi/apartmanı/caddesi/bölge/bulvarı/sokağı/parkı), 'de 'da ya bakılabilir
