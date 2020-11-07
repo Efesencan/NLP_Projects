@@ -111,6 +111,13 @@ for line in inputFile:  # iterate for each line
             print("Date:", date)
 
     # RULE for LOCATION ***************************************************************************************************************
+    for post_location in post_locations:
+        match = re.findall(f"[A-ZÇĞİÖŞÜ][a-zçğıöşü\']*\s[A-ZÇĞİÖŞÜ]*[a-zçğıöşü\']*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü\']*\s*{post_location}",line)
+        #print(match)
+        for location in match:
+            print("Location:",location.strip())
+            line = line.replace(location,'')
+
     match = re.findall(
         r'[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*', line)
     if len(match):
@@ -125,6 +132,7 @@ for line in inputFile:  # iterate for each line
                         print("Location:", final.strip())
                         line = line.replace(final, '')
     
+
     # location (şehri/ilçesi/beldesi/mahallesi/apartmanı/caddesi/bölge/bulvarı/sokağı/parkı), 'de 'da ya bakılabilir
     # ülkelere ve kısaltmaları eklenecek ()
     # popular dünya şehirleri eklenecek (yapıldı)
