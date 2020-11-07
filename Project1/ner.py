@@ -4,7 +4,7 @@ import re
 
 
 inputFile = open("input.txt", "r", encoding='utf-8')
-with open("name.txt", encoding='utf-8') as name:
+with open("updated_names.txt", encoding='utf-8') as name:
     name_content = [line.rstrip() for line in name]
 
 with open("pre_titles.txt", encoding='utf-8') as pre_titles:
@@ -70,6 +70,7 @@ for line in inputFile:  # iterate for each line
                     if len(long_match):
                         for i in long_match:
                             store_long_match.append(i.strip())
+                            line = line.replace(i,'')   # added new line
                             print("Date:", i.strip())
     for month_text in month:  # 12 Eylül 1935
         if month_text in line:
@@ -82,32 +83,89 @@ for line in inputFile:  # iterate for each line
                         if i in j:
                             show = 0
                     if(show):
+                        line = line.replace(i,'')
                         print("Date:", i.strip())
+    
 
+    match = re.findall(r'[Y-y]ıl[a-zçğıöşü]*\s(\d+)',line)
+    if(len(match)):
+        for date in match:
+            print("Date:",date)
+    match = re.findall(r'[S-s]ene[a-zçğıöşü]*\s(\d+)',line)
+    if(len(match)):
+        for date in match:
+            print("Date:",date)
     # RULE for NAME
     names = []
-    isEntered = 0
     for pre_title in pre_titles:
-        match = re.findall(f'{pre_title}\s*([A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\.*\s*[A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*)', line)
+        match = re.findall(
+            f'{pre_title}\s*([A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\.*\s*[A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*)', line)
         if len(match):
-            isEntered = 1
             for name in match:
                 if name not in names:
-                    print("Name:",name)
+                    print("Name:", name)
+                    line = line.replace(name, "")
                     names.append(name)
-    
+
     for post_title in post_titles:
         match = re.findall(f'([A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*)\s*{post_title}', line)
         if len(match):
-            isEntered = 1
             for name in match:
-                print("Name:",name)
-    match = re.findall(r'leri\s',line)
-    match = re.findall(r'ları')
-    match = re.findall(r'imiz\s')
-    match = re.findall(r'ımız\s[A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*')
-    # hiçbi rütbeli kısıma girmediyse buradan isim listesi kontrol edilecek, orda da yoksa organizasyon büyük iht. ve lokasyon
-    # Efe topu tuttu. (İsim Listesi gerekecek).
+                print("Name:", name)
+                line = line.replace(name, "")
 
+    match = re.findall(r'[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*', line)
+    final_name = ''
+    if len(match):
+        for name in match:
+            splitted_names= name.split()
+            if(len(splitted_names) > 1):
+                for chance in splitted_names:
+                    if chance != chance.capitalize():
+                        pass
+                    else:
+                        if chance in name_content: # soyad listesi bul
+                            final_name += chance + ' '
+            else:
+                if splitted_names[0] in name_content:
+                    print("Name:",splitted_names[0])
             
+    if(len(final_name)):
+        split_final = final_name.split()
+        if(len(split_final) >= 1):
+            print("Name:",final_name.strip())
+
+                        
+                        # organizasyon olma ihtimalini göz ardı ediyorum şu an Örn: Efe Şencan Üniversitesi
+          
+
+
+
+
+    
+    
+    """match = re.findall(r'[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*', line)
+    print(match)
+    for capital_words in match:
+        index = capital_words.find(' ')
+        first_name = capital_words[:index]
+        second_name = ""
+        if (index != len(capital_words)-1):
+            second_name = capital_words[index+1::]
+        if first_name in name_content and second_name in name_content:
+            print("Name:", first_name + ' ' + second_name)
+        if first_name in name_content:
+            print("Name:", first_name)
+        if second_name in name_content:
+            print("Name:", second_name)"""
+
+    #match = re.findall(r'leri\s',line)
+    #match = re.findall(r'ları')
+    #match = re.findall(r'imiz\s')
+    #match = re.findall(r'ımız\s[A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*')
+    # hiçbi rütbeli kısıma girmediyse buradan isim listesi kontrol edilecek, orda da yoksa organizasyon büyük iht. ve lokasyon, ama kelime organizasyonda
+    # da yoksa kendisini ve yanındaki harfe de bakarak default isim kabul edilcek.
+    # Efe topu tuttu. (İsim Listesi gerekecek).
+    # Yabancı İsimler
+
     # location (şehri/ilçesi/beldesi/mahallesi/apartmanı/caddesi/bölge/)
