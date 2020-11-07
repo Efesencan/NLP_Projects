@@ -1,3 +1,5 @@
+ATATÜRK
+Atatürk
 Aba
 Abaca
 Abacan
@@ -8596,7 +8598,6 @@ Türemen
 Türev
 Türker
 Türkine
-Türkiye
 Türkmen
 Türksel
 Türkşen

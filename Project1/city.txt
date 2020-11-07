@@ -79,3 +79,10 @@ Karabük
 Kilis
 Osmaniye
 Düzce
+Ege Bölgesi
+Akdeniz Bölgesi
+İç Anadalu Bölgesi
+Doğu Anadalu Bölgesi
+Güneydoğu Anadalu Bölgesi
+Marmara Bölgesi
+Karadeniz Bölgesi

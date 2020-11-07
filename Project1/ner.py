@@ -21,9 +21,23 @@ with open("day.txt", encoding='utf-8') as date:
 with open("month.txt", encoding='utf-8') as date:
     month = [line.rstrip() for line in date]
 
-with open("location.txt", encoding='utf-8') as location:
-    location = [line.rstrip() for line in location]
-# print(location)
+# LOCATION RELATED FILES
+with open("world_cities.txt", encoding='utf-8') as world_cities:
+    world_cities = [line.rstrip() for line in world_cities]
+
+with open("city.txt", encoding='utf-8') as cities:
+    turkish_cities = [line.rstrip() for line in cities]
+
+with open("countries.txt", encoding='utf-8') as country_list:
+    countries = [line.rstrip() for line in country_list]
+
+with open("updated_ilçeler.txt", encoding='utf-8') as ilce_list:
+    ilceler = [line.rstrip() for line in ilce_list]
+
+with open("post_location.txt", encoding='utf-8') as post_location:
+    post_locations = [line.rstrip() for line in post_location]
+
+# ORGANIZATION RELATED FILES
 
 for line in inputFile:  # iterate for each line
 
@@ -71,7 +85,7 @@ for line in inputFile:  # iterate for each line
                     if len(long_match):
                         for i in long_match:
                             store_long_match.append(i.strip())
-                            line = line.replace(i,'')   # added new line
+                            line = line.replace(i, '')   # added new line
                             print("Date:", i.strip())
     for month_text in month:  # 12 Eylül 1935
         if month_text in line:
@@ -84,18 +98,40 @@ for line in inputFile:  # iterate for each line
                         if i in j:
                             show = 0
                     if(show):
-                        line = line.replace(i,'')
+                        line = line.replace(i, '')
                         print("Date:", i.strip())
-    
 
-    match = re.findall(r'[Y-y]ıl[a-zçğıöşü]*\s(\d+)',line)
+    match = re.findall(r'[Y-y]ıl[a-zçğıöşü]*\s(\d+)', line)
     if(len(match)):
         for date in match:
-            print("Date:",date)
-    match = re.findall(r'[S-s]ene[a-zçğıöşü]*\s(\d+)',line)
+            print("Date:", date)
+    match = re.findall(r'[S-s]ene[a-zçğıöşü]*\s(\d+)', line)
     if(len(match)):
         for date in match:
-            print("Date:",date)
+            print("Date:", date)
+
+    # RULE for LOCATION ***************************************************************************************************************
+    match = re.findall(
+        r'[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*', line)
+    if len(match):
+        for location in match:
+            location_list = location.split()
+            final = ""
+            for chance in location_list:
+                if chance[0].isupper():
+                    final += ' ' + chance 
+                    final = final.strip()
+                    if (final in world_cities) or (final in countries) or (final in turkish_cities) or (final in ilceler):
+                        print("Location:", final.strip())
+                        line = line.replace(final, '')
+    
+    # location (şehri/ilçesi/beldesi/mahallesi/apartmanı/caddesi/bölge/bulvarı/sokağı/parkı), 'de 'da ya bakılabilir
+    # ülkelere ve kısaltmaları eklenecek ()
+    # popular dünya şehirleri eklenecek (yapıldı)
+    # kıtalarn (eklendi)
+    # ...Stadı, Meydanı, ...Merkezi, Caddesi, ...Bölgesi,
+    # .. Kültür ve Sanat Merkezi / Merkezi'nde , kalemim Efe'de kalmış, üst tiredfen önceki kelime isim mi diyr kontrol et veya belki zaten replace edilmiş olur yukarda
+
     # RULE for NAME *******************************************************************************************
     names = []
     for pre_title in pre_titles:
@@ -105,7 +141,8 @@ for line in inputFile:  # iterate for each line
             for name in match:
                 if name not in names:
                     print("Name:", name)
-                    line = line.replace(pre_title + ' ' + name, "") # updated here
+                    line = line.replace(
+                        pre_title + ' ' + name, "")  # updated here
                     names.append(name)
 
     for post_title in post_titles:
@@ -115,43 +152,29 @@ for line in inputFile:  # iterate for each line
                 print("Name:", name)
                 line = line.replace(name + ' ' + post_title, "")
 
-    match = re.findall(r'[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*', line)
+    match = re.findall(
+        r'[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*', line)
     final_name = ''
     if len(match):
         for name in match:
-            splitted_names= name.split()
+            splitted_names = name.split()
             if(len(splitted_names) > 1):
                 for chance in splitted_names:
-                    if chance != chance.capitalize():
+                    if (chance[0].isupper() == False):
                         pass
                     else:
-                        if chance in name_content: # soyad listesi bul
+                        if chance in name_content:  # soyad listesi bul
                             final_name += chance + ' '
             else:
                 if splitted_names[0] in name_content:
-                    print("Name:",splitted_names[0])
-            
+                    print("Name:", splitted_names[0])
+
     if(len(final_name)):
         split_final = final_name.split()
         if(len(split_final) >= 1):
-            print("Name:",final_name.strip())
+            print("Name:", final_name.strip())
 
-                        
-                        # organizasyon olma ihtimalini göz ardı ediyorum şu an Örn: Efe Şencan Üniversitesi
-          
-    # RULE for LOCATION ***************************************************************************************************************
-
-
-    # location (şehri/ilçesi/beldesi/mahallesi/apartmanı/caddesi/bölge/), 'de 'da ya bakılabilir
-    # ülkelere ve kısaltmaları eklenecek ()
-    # popular dünya şehirleri eklenecek (yapıldı)
-    # .. Kültür ve Sanat Merkezi / Merkezi'nde , kalemim Efe'de kalmış, üst tiredfen önceki kelime isim mi diyr kontrol et veya belki zaten replace edilmiş olur yukarda
-
-    
-    
-    
-
-
+            # organizasyon olma ihtimalini göz ardı ediyorum şu an Örn: Efe Şencan Üniversitesi
 
     #match = re.findall(r'leri\s',line)
     #match = re.findall(r'ları')
@@ -160,5 +183,3 @@ for line in inputFile:  # iterate for each line
     # hiçbi rütbeli kısıma girmediyse buradan isim listesi kontrol edilecek, orda da yoksa organizasyon büyük iht. ve lokasyon, ama kelime organizasyonda
     # da yoksa kendisini ve yanındaki harfe de bakarak default isim kabul edilcek.
     # Yabancı İsimler
-
-    
