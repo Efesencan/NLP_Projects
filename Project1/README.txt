@@ -9,5 +9,10 @@ Names:
 Location:
 	https://tr.wikipedia.org/wiki/T%C3%BCrkiye%27nin_illeri (Türkiye şehirleri)
 	https://github.com/FinNLP/cities-list/blob/master/list.txt (World Cities)
+	İlçeler de vikipedi
+
+Organization:
+	https://gist.github.com/hicay/d2b0035db00e87c207c0 (Türkiye Üniversitleri)
+
 	
 

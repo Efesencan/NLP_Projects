@@ -113,6 +113,7 @@ for line in inputFile:  # iterate for each line
             print("Line "+str(line_count) + ": " + "TIME", date)
     
     match = re.findall(r'(\d{4})', line)
+    
     if(len(match)):
         for date in match:
             print("Line "+str(line_count) + ": " + "TIME", date)
