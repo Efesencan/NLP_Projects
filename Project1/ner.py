@@ -38,7 +38,8 @@ with open("post_location.txt", encoding='utf-8') as post_location:
     post_locations = [line.rstrip() for line in post_location]
 
 # ORGANIZATION RELATED FILES
-
+with open("post_organization.txt", encoding='utf-8') as post_organization:
+    post_organizations = [line.rstrip() for line in post_organization]
 
 line_count = 1
 for line in inputFile:  # iterate for each line
@@ -100,8 +101,10 @@ for line in inputFile:  # iterate for each line
                         if i in j:
                             show = 0
                     if(show):
-                        line = line.replace(i, '')
-                        print("Line "+str(line_count) + ": " + "TIME", i.strip())
+                        date_list = i.split()
+                        if(len(date_list) > 1):
+                            line = line.replace(i, '')
+                            print("Line "+str(line_count) + ": " + "TIME", i.strip())
 
     match = re.findall(r'[Y-y]ıl[a-zçğıöşü]*\s(\d+)', line)
     if(len(match)):
@@ -113,7 +116,7 @@ for line in inputFile:  # iterate for each line
             print("Line "+str(line_count) + ": " + "TIME", date)
     
     match = re.findall(r'(\d{4})', line)
-    
+
     if(len(match)):
         for date in match:
             print("Line "+str(line_count) + ": " + "TIME", date)
@@ -156,13 +159,38 @@ for line in inputFile:  # iterate for each line
             if (i in world_cities) or (i in countries) or (i in turkish_cities) or (i in ilceler):
                 print("Line "+str(line_count) + ": " + "LOCATION", i.strip())
 
-    # li-li bitişik yazılırmış örneğin Rizeli
+    # li-li bitişik yazılırmış örneğin Rizeli (yapıldı)
     # location (şehri/ilçesi/beldesi/mahallesi/apartmanı/caddesi/bölge/bulvarı/sokağı/parkı), 'de 'da ya bakılabilir
     # ülkelere ve kısaltmaları eklenecek ()
     # popular dünya şehirleri eklenecek (yapıldı)
     # kıtalarn (eklendi)
     # ...Stadı, Meydanı, ...Merkezi, Caddesi, ...Bölgesi,
     # .. Kültür ve Sanat Merkezi / Merkezi'nde , kalemim Efe'de kalmış, üst tiredfen önceki kelime isim mi diyr kontrol et veya belki zaten replace edilmiş olur yukarda
+
+
+    # RULE for ORGANIZATION************************************************************************************
+    
+    for post_organization in post_organizations:
+        match = re.findall(f'[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s{post_organization}',line)
+        if(len(match)):
+            for i in match:
+                final = ""
+                organization_list = i.split()
+                for chance in organization_list:
+                    if chance[0].isupper() or chance == 've':
+                        final += chance + ' '
+                    if chance == '-':
+                        final += chance
+                final = final.strip()
+                print("Line "+str(line_count) + ": " + "ORGANIZATION", final)
+                line = line.replace(final,'')
+
+    match = re.findall(r'[A-ZÇĞİÖŞÜ]{2,}',line) # partiler ve kısaltmalar (NATO, UNICEF)
+    if (len(match)):
+        for organization in match:
+            if organization not in name_content and organization not in countries:
+                print("Line "+str(line_count) + ": " + "ORGANIZATION", organization)
+
 
     # RULE for NAME *******************************************************************************************
     line = line.strip()
@@ -224,6 +252,7 @@ for line in inputFile:  # iterate for each line
             print("Line "+str(line_count) + ": " + "PERSON", final_name.strip())
 
             # organizasyon olma ihtimalini göz ardı ediyorum şu an Örn: Efe Şencan Üniversitesi
+
 
     #match = re.findall(r'leri\s',line)
     #match = re.findall(r'ları')
