@@ -47,7 +47,6 @@ Sağlık Bakanı
 Çalışma ve Sosyal Güvenlik Bakanı
 Çevre ve Doğal Kaynaklar Bakanı
 Başsavcı
-Grup Başkan Vekili
 Parti Başkanı
 Genel Başkanı
 Müdürümüz  
@@ -61,3 +60,5 @@ Polis Genel Müdürü
 Milletvekilleri
 Sayın
 Sevgili
+Başkanvekili
+Başkan

@@ -44,6 +44,12 @@ with open("post_organization.txt", encoding='utf-8') as post_organization:
 with open("company.txt", encoding='utf-8') as company_list:
     companies = [line.rstrip() for line in company_list]
 
+with open("teams.txt", encoding='utf-8') as team_list:
+    teams = [line.rstrip() for line in team_list]
+
+with open("bank.txt", encoding='utf-8') as bank_list:
+    banks = [line.rstrip() for line in bank_list]
+
 line_count = 1
 for line in inputFile:  # iterate for each line
 
@@ -54,31 +60,36 @@ for line in inputFile:  # iterate for each line
         if len(match):
             for i in match:
                 print("Line "+str(line_count) + ": " + "TIME", i.strip())
+                line = line.replace(i,'')
         match = re.findall(r'\d{2}/\d{2}/\d{1,}', line)
         if len(match):
             for i in match:
                 print("Line "+str(line_count) + ": " + "TIME", i.strip())
+                line = line.replace(i,'')
         match = re.findall(r'\d{2}\.\d{2}\.\d{1,}', line)
         if len(match):
             for i in match:
                 print("Line "+str(line_count) + ": " + "TIME", i.strip())
-
+                line = line.replace(i,'')
         if 'yıl' in line or 'sene' in line:
             match = re.findall(r'(\d*)\s*yıl', line)
             if len(match):
                 for i in match:
                     print("Line "+str(line_count) + ": " + "TIME", i)
+                    line = line.replace(i,'')
             else:
                 pass  # 3 basamaklı ve daha az yıllar
             match = re.findall(r'(\d*)\s*sene', line)
             if len(match):
                 for i in match:
                     print("Line "+str(line_count) + ": " + "TIME", i)
+                    line = line.replace(i,'')
         if "'" in line:
             match = re.findall(r"(\d+)'", line)
             if len(match):
                 for i in match:
                     print("Line "+str(line_count) + ": " + "TIME", i.strip())
+                    line = line.replace(i,'')
     store_long_match = []
     for month_text in month:  # 12 Eylül Salı olan case
         if month_text in line:
@@ -92,7 +103,9 @@ for line in inputFile:  # iterate for each line
                         for i in long_match:
                             store_long_match.append(i.strip())
                             line = line.replace(i, '')   # added new line
-                            print("Line "+str(line_count) + ": " + "TIME", i.strip())
+                            print("Line "+str(line_count) +
+                                  ": " + "TIME", i.strip())
+                            line = line.replace(i,'')
     for month_text in month:  # 12 Eylül 1935
         if month_text in line:
             my_month = month_text
@@ -107,56 +120,63 @@ for line in inputFile:  # iterate for each line
                         date_list = i.split()
                         if(len(date_list) > 1):
                             line = line.replace(i, '')
-                            print("Line "+str(line_count) + ": " + "TIME", i.strip())
+                            print("Line "+str(line_count) +
+                                  ": " + "TIME", i.strip())
+                            line = line.replace(i,'')
 
     match = re.findall(r'[Y-y]ıl[a-zçğıöşü]*\s(\d+)', line)
     if(len(match)):
         for date in match:
             print("Line "+str(line_count) + ": " + "TIME", date)
+            line = line.replace(date,'')
     match = re.findall(r'[S-s]ene[a-zçğıöşü]*\s(\d+)', line)
     if(len(match)):
         for date in match:
             print("Line "+str(line_count) + ": " + "TIME", date)
-    
+            line = line.replace(date,'')
     match = re.findall(r'(\d{4})', line)
 
     if(len(match)):
         for date in match:
             print("Line "+str(line_count) + ": " + "TIME", date)
+            line = line.replace(date,'')
 
     # RULE for LOCATION ***************************************************************************************************************
     line = line.strip()
     for post_location in post_locations:
-        match = re.findall(f"[A-ZÇĞİÖŞÜ][a-zçğıöşü\']*\s[A-ZÇĞİÖŞÜ]*[a-zçğıöşü\']*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü\']*\s*{post_location}",line)
+        match = re.findall(
+            f"[A-ZÇĞİÖŞÜ][a-zçğıöşü\']*\s[A-ZÇĞİÖŞÜ]*[a-zçğıöşü\']*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü\']*\s*{post_location}", line)
         for location in match:
-            print("Line "+str(line_count) + ": " + "LOCATION",location.strip())
-            line = line.replace(location,'')
+            print("Line "+str(line_count) + ": " +
+                  "LOCATION", location.strip())
+            line = line.replace(location, '')
 
-    #match = re.findall(
-        #r'[[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*]*', line)
+    # match = re.findall(
+        # r'[[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*]*', line)
     match = re.findall(
-       r'[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*', line)
+        r'[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*', line)
     if len(match):
         for location in match:
             location_list = location.split()
             final = ""
             for chance in location_list:
                 if chance[0].isupper():
-                    final += ' ' + chance 
+                    final += ' ' + chance
                     final = final.strip()
                     if (final in world_cities) or (final in countries) or (final in turkish_cities) or (final in ilceler):
-                        print("Line "+str(line_count) + ": " + "LOCATION", final.strip())
+                        print("Line "+str(line_count) +
+                              ": " + "LOCATION", final.strip())
                         line = line.replace(final, '')
                 else:
                     final = ""
-    
-    match = re.findall('([A-ZÇĞİÖŞÜ][a-zçğıöşü]*)li',line)
+
+    match = re.findall('([A-ZÇĞİÖŞÜ][a-zçğıöşü]*)li', line)
     if(len(match)):
         for i in match:
             if (i in world_cities) or (i in countries) or (i in turkish_cities) or (i in ilceler):
                 print("Line "+str(line_count) + ": " + "LOCATION", i.strip())
-    
-    match = re.findall('([A-ZÇĞİÖŞÜ][a-zçğıöşü]*)lı',line)
+
+    match = re.findall('([A-ZÇĞİÖŞÜ][a-zçğıöşü]*)lı', line)
     if(len(match)):
         for i in match:
             if (i in world_cities) or (i in countries) or (i in turkish_cities) or (i in ilceler):
@@ -170,11 +190,11 @@ for line in inputFile:  # iterate for each line
     # ...Stadı, Meydanı, ...Merkezi, Caddesi, ...Bölgesi,
     # .. Kültür ve Sanat Merkezi / Merkezi'nde , kalemim Efe'de kalmış, üst tiredfen önceki kelime isim mi diyr kontrol et veya belki zaten replace edilmiş olur yukarda
 
-
     # RULE for ORGANIZATION************************************************************************************
-    
+
     for post_organization in post_organizations:
-        match = re.findall(f'[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s{post_organization}',line)
+        match = re.findall(
+            f'[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s{post_organization}', line)
         if(len(match)):
             for i in match:
                 final = ""
@@ -186,29 +206,40 @@ for line in inputFile:  # iterate for each line
                         final += chance
                 final = final.strip()
                 print("Line "+str(line_count) + ": " + "ORGANIZATION", final)
-                line = line.replace(final,'')
+                line = line.replace(final, '')
 
-    match = re.findall(r'[A-ZÇĞİÖŞÜ]{2,}',line) # partiler ve kısaltmalar (NATO, UNICEF)
+    # partiler ve kısaltmalar (NATO, UNICEF)
+    match = re.findall(r'[A-ZÇĞİÖŞÜ]{2,}', line)
     if (len(match)):
         for organization in match:
             if organization not in name_content and organization not in countries:
-                if organization != 'CEO' and organization != 'CTO' and organization !='CFO': 
-                    print("Line "+str(line_count) + ": " + "ORGANIZATION", organization)
-                    line = line.replace(organization,'')
-
+                if organization != 'CEO' and organization != 'CTO' and organization != 'CFO':
+                    print("Line "+str(line_count) + ": " +
+                          "ORGANIZATION", organization)
+                    line = line.replace(organization, '')
 
     for company in companies:
-        match = re.findall(f'{company}',line)
+        match = re.findall(f'{company}', line)
         if len(match):
             for i in match:
-                print("Line "+str(line_count) + ": " + "ORGANIZATION", i.strip())
+                print("Line "+str(line_count) +
+                      ": " + "ORGANIZATION", i.strip())
+                line = line.replace(i, '')
+
+    for team in teams:
+        match = re.findall(f'{team}', line)
+        if len(match):
+            for i in match:
+                print("Line "+str(line_count) +
+                      ": " + "ORGANIZATION", i.strip())
+                line = line.replace(i, '')
 
     # RULE for NAME *******************************************************************************************
     line = line.strip()
     names = []
     for pre_title in pre_titles:
         match = re.findall(
-            f'{pre_title}\s*([A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\.*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*)', line) # buraya bi bak
+            f'{pre_title}\s*([A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\.*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*)', line)  # buraya bi bak
         if len(match):
             for name in match:
                 check_list = name.split()
@@ -223,7 +254,8 @@ for line in inputFile:  # iterate for each line
                             if final not in name_content:
                                 pass
                         else:
-                            print("Line "+str(line_count) + ": " + "PERSON", final)
+                            print("Line "+str(line_count) +
+                                  ": " + "PERSON", final)
                             line = line.replace(
                                 pre_title + ' ' + final, "")  # updated here
                             names.append(final)
@@ -249,21 +281,30 @@ for line in inputFile:  # iterate for each line
             if(len(splitted_names) > 1):
                 for chance in splitted_names:
                     if (chance[0].isupper() == False):
-                        pass
+                        if chance == 'ile' or chance == 've':
+                            if(len(final_name)):
+                                split_final = final_name.split()
+                                if(len(split_final) >= 1):
+                                    print("Line "+str(line_count) + ": " +
+                                        "PERSON", final_name.strip())
+                            final_name = ''
+                        else:
+                            pass
                     else:
                         if chance in name_content:  # soyad listesi bul
                             final_name += chance + ' '
             else:
                 if splitted_names[0] in name_content:
-                    print("Line "+str(line_count) + ": " + "PERSON", splitted_names[0])
+                    print("Line "+str(line_count) + ": " +
+                          "PERSON", splitted_names[0])
 
     if(len(final_name)):
         split_final = final_name.split()
         if(len(split_final) >= 1):
-            print("Line "+str(line_count) + ": " + "PERSON", final_name.strip())
+            print("Line "+str(line_count) + ": " +
+                  "PERSON", final_name.strip())
 
             # organizasyon olma ihtimalini göz ardı ediyorum şu an Örn: Efe Şencan Üniversitesi
-
 
     #match = re.findall(r'leri\s',line)
     #match = re.findall(r'ları')

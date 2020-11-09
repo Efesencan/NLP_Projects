@@ -1,5 +1,6 @@
 Üniversitesi
 University
+University
 Vakfı
 Kurumu
 Enstitüsü
@@ -59,3 +60,30 @@ Koleji
 Gazetesi
 Press
 Haber
+Turnuvası
+Şampiyonası
+Şenliği
+Festivali
+Etkinliği
+Müsabakası
+İnşaat
+Sanayi
+A.Ş
+LTD
+Kooperatifleri
+Group
+Grup
+Ticaret
+Müşavirlik
+K.Ş
+Taahüt
+Kolektif Şirket
+Kooperatif Şirket
+Anonim Şirket
+Firması
+Konferansı
+Paneli
+Kongresi
+Fuarı
+Sergisi
+Kongresi
