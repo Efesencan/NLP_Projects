@@ -41,6 +41,9 @@ with open("post_location.txt", encoding='utf-8') as post_location:
 with open("post_organization.txt", encoding='utf-8') as post_organization:
     post_organizations = [line.rstrip() for line in post_organization]
 
+with open("company.txt", encoding='utf-8') as company_list:
+    companies = [line.rstrip() for line in company_list]
+
 line_count = 1
 for line in inputFile:  # iterate for each line
 
@@ -189,8 +192,16 @@ for line in inputFile:  # iterate for each line
     if (len(match)):
         for organization in match:
             if organization not in name_content and organization not in countries:
-                print("Line "+str(line_count) + ": " + "ORGANIZATION", organization)
+                if organization != 'CEO' and organization != 'CTO' and organization !='CFO': 
+                    print("Line "+str(line_count) + ": " + "ORGANIZATION", organization)
+                    line = line.replace(organization,'')
 
+
+    for company in companies:
+        match = re.findall(f'{company}',line)
+        if len(match):
+            for i in match:
+                print("Line "+str(line_count) + ": " + "ORGANIZATION", i.strip())
 
     # RULE for NAME *******************************************************************************************
     line = line.strip()

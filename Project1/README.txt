@@ -13,6 +13,9 @@ Location:
 
 Organization:
 	https://gist.github.com/hicay/d2b0035db00e87c207c0 (Türkiye Üniversitleri)
+	https://github.com/mvila/big-companies/blob/master/data.json (World Companies)
+	https://github.com/smazcw3/European-Soccer-Data/blob/master/team.csv (Some Soccer Teams)
+	https://en.wikipedia.org/wiki/List_of_football_clubs_in_Turkey (Turkish Soccer Teams)											
 
 	
 

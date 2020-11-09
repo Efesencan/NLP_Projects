@@ -1,4 +1,5 @@
 Üniversitesi
+University
 Vakfı
 Kurumu
 Enstitüsü
@@ -22,6 +23,7 @@ Dergisi
 Kuvveteri
 Barosu
 Borsası
+Radyo
 Radyosu
 Hotel
 Otel
