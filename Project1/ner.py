@@ -159,17 +159,27 @@ for line in inputFile:  # iterate for each line
         for location in match:
             location_list = location.split()
             final = ""
-            for chance in location_list:
-                if chance[0].isupper():
-                    final += ' ' + chance
-                    final = final.strip()
-                    if (final in world_cities) or (final in countries) or (final in turkish_cities) or (final in ilceler):
-                        print("Line "+str(line_count) +
-                              ": " + "LOCATION", final.strip())
-                        line = line.replace(final, '')
+            uppercase = ""
+            index = 0
+            for first_trial in location_list:
+                if first_trial[0].isupper():
+                    uppercase += first_trial + ' '
                 else:
-                    final = ""
-
+                    uppercase = uppercase.strip()
+                    if (uppercase in world_cities) or (uppercase in countries) or (uppercase in turkish_cities) or (uppercase in ilceler):
+                        print("Line "+str(line_count) +
+                              ": " + "LOCATION", uppercase.strip())
+                        line = line.replace(uppercase, '')
+                        uppercase = ""
+                index += 1
+                if(index == len(location_list)):
+                    uppercase = uppercase.strip()
+                    if(len(uppercase)):
+                        if (uppercase in world_cities) or (uppercase in countries) or (uppercase in turkish_cities) or (uppercase in ilceler):
+                            print("Line "+str(line_count) +
+                              ": " + "LOCATION", uppercase.strip())
+                            line = line.replace(uppercase, '')
+                        
     match = re.findall('([A-ZÇĞİÖŞÜ][a-zçğıöşü]*)li', line)
     if(len(match)):
         for i in match:
@@ -274,6 +284,7 @@ for line in inputFile:  # iterate for each line
 
     match = re.findall(
         r'[A-ZÇĞİÖŞÜ][a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*', line)
+
     final_name = ''
     if len(match):
         for name in match:

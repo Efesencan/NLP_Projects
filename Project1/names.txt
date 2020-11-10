@@ -4,6 +4,8 @@ Erkoçlar
 Bill
 Gates
 Steve Jobs
+Mark
+Zuckerberg
 Efe
 Şencan
 Veysel
@@ -3797,7 +3799,6 @@ Helat
 Eni̇z
 Nutkullah
 Kari̇zma
-Hatay
 İstek
 M.sai̇t
 Güçhan
@@ -12474,7 +12475,6 @@ Gülveli̇
 Haci̇gül
 Neşe
 Ni̇mmet
-Mersi̇n
 Belkutay
 Celaletti̇ni̇lhan
 Ki̇ri̇t
@@ -21261,7 +21261,6 @@ Edebi̇
 Adni̇
 Rasef
 Cevaydin
-Konak
 Argi̇hi̇şt
 Gülendağ
 Ai̇mer
@@ -75085,7 +75084,6 @@ Cullach
 Yuretti̇n
 Mahme
 Beserek
-Kayseri̇
 Bedut
 Nafi̇i̇ddi̇n
 Tanriyel
@@ -77244,7 +77242,6 @@ Müşti̇
 Meftuh
 Zi̇lhaç
 Halal
-Konya
 Rudet
 Muhi̇ttin
 Ni̇colai̇
