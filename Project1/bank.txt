@@ -1,47 +1,94 @@
-Adabank A.Ş. 
-Akbank T.A.Ş. 
-Aktif Yatırım Bankası A.Ş. 
-Alternatifbank A.Ş. 
-Anadolubank A.Ş. 
-Arap Türk Bankası A.Ş. 
+Adabank A.Ş.
+Adabank 
+Akbank T.A.Ş.
+Akbank 
+Aktif Yatırım Bankası A.Ş.
+Aktif Yatırım Bankası 
+Alternatifbank A.Ş.
+Alternatifbank 
+Anadolubank A.Ş.
+Anadolubank 
+Arap Türk Bankası A.Ş.
+Arap Türk Bankası 
 Bank Mellat 
-Bank of Tokyo-Mitsubishi UFJ Turkey A.Ş. 
-BankPozitif Kredi ve Kalkınma Bankası A.Ş. 
-Birleşik Fon Bankası A.Ş. 
-Burgan Bank A.Ş. 
-Citibank A.Ş. 
-Denizbank A.Ş. 
-Deutsche Bank A.Ş. 
-Diler Yatırım Bankası A.Ş. 
-Fibabanka A.Ş. 
-Finans Bank A.Ş. 
-GSD Yatırım Bankası A.Ş. 
+Bank of Tokyo-Mitsubishi UFJ Turkey A.Ş.
+Bank of Tokyo-Mitsubishi UFJ Turkey 
+BankPozitif Kredi ve Kalkınma Bankası A.Ş.
+BankPozitif Kredi ve Kalkınma Bankası 
+Birleşik Fon Bankası A.Ş.
+Birleşik Fon Bankası 
+Burgan Bank A.Ş.
+Burgan Bank 
+Citibank A.Ş.
+Citibank 
+Denizbank A.Ş.
+Denizbank 
+Deutsche Bank A.Ş.
+Deutsche Bank 
+Diler Yatırım Bankası A.Ş.
+Diler Yatırım Bankası 
+Fibabanka A.Ş.
+Fibabanka 
+Finans Bank A.Ş.
+Finans Bank 
+GSD Yatırım Bankası A.Ş.
+GSD Yatırım Bankası 
 Habib Bank Limited 
-HSBC Bank A.Ş. 
-ING Bank A.Ş. 
-Intesa Sanpaolo S.p.A. 
-İller Bankası A.Ş. 
-İstanbul Takas ve Saklama Bankası A.Ş. 
-JPMorgan Chase Bank N.A. 
-Merrill Lynch Yatırım Bank A.Ş. 
-Nurol Yatırım Bankası A.Ş. 
-Odea Bank A.Ş. 
-Pasha Yatırım Bankası A.Ş. 
-Rabobank A.Ş. 
-Société Générale (SA) 
-Standard Chartered Yatırım Bankası Türk A.Ş. 
-Şekerbank T.A.Ş. 
-Tekstil Bankası A.Ş. 
+HSBC Bank A.Ş.
+HSBC 
+ING Bank A.Ş.
+ING Bank 
+Intesa Sanpaolo S.p.A.
+Intesa Sanpaolo 
+İller Bankası A.Ş.
+İller Bankası 
+İstanbul Takas ve Saklama Bankası A.Ş.
+İstanbul Takas ve Saklama Bankası 
+JPMorgan Chase Bank N.A.
+JPMorgan Chase Bank 
+Merrill Lynch Yatırım Bank A.Ş.
+Merrill Lynch Yatırım Bank 
+Nurol Yatırım Bankası A.Ş.
+Nurol Yatırım Bankası 
+Odea Bank A.Ş.
+Odea Bank 
+Pasha Yatırım Bankası A.Ş.
+Pasha Yatırım Bankası 
+Rabobank A.Ş.
+Rabobank 
+Société Générale (SA)
+Société Générale 
+Standard Chartered Yatırım Bankası Türk A.Ş.
+Standard Chartered Yatırım Bankası 
+Şekerbank T.A.Ş.
+Şekerbank 
+Tekstil Bankası A.Ş.
+Tekstil Bankası 
 The Royal Bank of Scotland Plc. 
-Turkish Bank A.Ş. 
-Turkland Bank A.Ş. 
-Türk Ekonomi Bankası A.Ş. 
+Turkish Bank A.Ş.
+Turkish Bank 
+Turkland Bank A.Ş.
+Turkland Bank 
+Türk Ekonomi Bankası A.Ş.
+Türk Ekonomi Bankası 
 Türk Eximbank 
-Türkiye Cumhuriyeti Ziraat Bankası A.Ş. 
-Türkiye Garanti Bankası A.Ş. 
-Türkiye Halk Bankası A.Ş. 
-Türkiye İş Bankası A.Ş. 
+Türkiye Cumhuriyeti Ziraat Bankası A.Ş.
+Türkiye Cumhuriyeti Ziraat Bankası
+Ziraat Bankası 
+Türkiye Garanti Bankası A.Ş.
+Türkiye Garanti Bankası
+Garanti Bankası 
+Türkiye Halk Bankası A.Ş.
+Türkiye Halk Bankası
+Halk Bankası 
+Türkiye İş Bankası A.Ş.
+Türkiye İş Bankası
+İş Bankası 
 Türkiye Kalkınma Bankası A.Ş. 
-Türkiye Sınai Kalkınma Bankası A.Ş. 
-Türkiye Vakıflar Bankası T.A.O. 
-Yapı ve Kredi Bankası A.Ş. 
+Türkiye Sınai Kalkınma Bankası A.Ş.
+Türkiye Sınai Kalkınma Bankası 
+Türkiye Vakıflar Bankası T.A.O.
+Türkiye Vakıflar Bankası
+VakifBank 
+Yapı ve Kredi Bankası A.Ş.
+Yapı ve Kredi Bankası 

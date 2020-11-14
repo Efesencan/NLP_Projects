@@ -50,6 +50,9 @@ with open("teams.txt", encoding='utf-8') as team_list:
 with open("bank.txt", encoding='utf-8') as bank_list:
     banks = [line.rstrip() for line in bank_list]
 
+with open("university.txt", encoding='utf-8') as university_list:
+    universities = [line.rstrip() for line in university_list]
+
 line_count = 1
 for line in inputFile:  # iterate for each line
 
@@ -185,12 +188,14 @@ for line in inputFile:  # iterate for each line
         for i in match:
             if (i in world_cities) or (i in countries) or (i in turkish_cities) or (i in ilceler):
                 print("Line "+str(line_count) + ": " + "LOCATION", i.strip())
+                line = line.replace(i.strip(), '')
 
     match = re.findall('([A-ZÇĞİÖŞÜ][a-zçğıöşü]*)lı', line)
     if(len(match)):
         for i in match:
             if (i in world_cities) or (i in countries) or (i in turkish_cities) or (i in ilceler):
                 print("Line "+str(line_count) + ": " + "LOCATION", i.strip())
+                line = line.replace(i.strip(), '')
 
     # li-li bitişik yazılırmış örneğin Rizeli (yapıldı)
     # location (şehri/ilçesi/beldesi/mahallesi/apartmanı/caddesi/bölge/bulvarı/sokağı/parkı), 'de 'da ya bakılabilir
@@ -204,7 +209,7 @@ for line in inputFile:  # iterate for each line
 
     for post_organization in post_organizations:
         match = re.findall(
-            f'[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s{post_organization}', line)
+            f'[A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]*[a-zçğıöşü]*\s*[A-ZÇĞİÖŞÜ]+[a-zçğıöşü]*\s{post_organization}', line)
         if(len(match)):
             for i in match:
                 final = ""
@@ -234,10 +239,26 @@ for line in inputFile:  # iterate for each line
             for i in match:
                 print("Line "+str(line_count) +
                       ": " + "ORGANIZATION", i.strip())
-                line = line.replace(i, '')
+                line = line.replace(i.strip(), '')
 
     for team in teams:
         match = re.findall(f'{team}', line)
+        if len(match):
+            for i in match:
+                print("Line "+str(line_count) +
+                      ": " + "ORGANIZATION", i.strip())
+                line = line.replace(i.strip(), '')
+    
+    for bank in banks:
+        match = re.findall(f'{bank}', line)
+        if len(match):
+            for i in match:
+                print("Line "+str(line_count) +
+                      ": " + "ORGANIZATION", i.strip())
+                line = line.replace(i.strip(), '')
+
+    for university in universities:
+        match = re.findall(f'{university}', line)
         if len(match):
             for i in match:
                 print("Line "+str(line_count) +
@@ -302,13 +323,13 @@ for line in inputFile:  # iterate for each line
                         else:
                             pass
                     else:
+                        #print(chance)
                         if chance in name_content:  # soyad listesi bul
                             final_name += chance + ' '
             else:
                 if splitted_names[0] in name_content:
                     print("Line "+str(line_count) + ": " +
                           "PERSON", splitted_names[0])
-
     if(len(final_name)):
         split_final = final_name.split()
         if(len(split_final) >= 1):
@@ -316,7 +337,6 @@ for line in inputFile:  # iterate for each line
                   "PERSON", final_name.strip())
 
             # organizasyon olma ihtimalini göz ardı ediyorum şu an Örn: Efe Şencan Üniversitesi
-
     #match = re.findall(r'leri\s',line)
     #match = re.findall(r'ları')
     #match = re.findall(r'imiz\s')

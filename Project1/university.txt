@@ -112,14 +112,14 @@ Mustafa Kemal Üniversitesi
 Muğla Sıtkı Koçman Üniversitesi
 Muş Alparslan Üniversitesi
 Namık Kemal Üniversitesi
-Necmettin Erbakan Üniversitesi**
+Necmettin Erbakan Üniversitesi
 Nevşehir Hacı Bektaş Veli Üniversitesi
 Niğde Üniversitesi
 Nişantaşı Üniversitesi
 Nuh Naci Yazgan Üniversitesi
 İbn-u Haldun Üniversitesi
 İnönü Üniversitesi
-İpek Üniversitesi**
+İpek Üniversitesi
 İskenderun Teknik Üniversitesi
 İstanbul 29 Mayıs Üniversitesi
 İstanbul Arel Üniversitesi
@@ -183,7 +183,7 @@ Yalova Üniversitesi
 Yaşar Üniversitesi
 Yeditepe Üniversitesi
 Yeni Yüzyıl Üniversitesi
-Yüksek İhtisas Üniversitesi**
+Yüksek İhtisas Üniversitesi
 Yüzüncü Yıl Üniversitesi
 Yıldırım Beyazıt Üniversitesi
 Yıldız Teknik Üniversitesi

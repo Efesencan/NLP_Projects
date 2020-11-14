@@ -17,6 +17,7 @@ Organization:
 	https://github.com/smazcw3/European-Soccer-Data/blob/master/team.csv (Some Soccer Teams)
 	https://en.wikipedia.org/wiki/List_of_football_clubs_in_Turkey (Turkish Soccer Teams)
 	https://www.tbf.org.tr/ligler/bsl-2020-2021/takimlar		(Turkish Basketbol Teams)
+	https://github.com/ThomasRoca/DataTools-for-Data-science-Society-Datathon-2018 (Forbes companies)
 									
 
 	

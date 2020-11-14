@@ -1067,6 +1067,7 @@ Atabey
 Ci̇had
 Boran
 Alemdar
+Alemdaroğlu
 İlter
 Çağri
 Gürçağ
@@ -89442,7 +89443,6 @@ Kazi̇yo
 Mamaca
 Aluki̇r
 Hüssa
-Anayasa
 Çukdar
 Karacevo
 Şeydi̇
