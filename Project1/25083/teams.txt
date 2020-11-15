@@ -1,0 +1,415 @@
+Ruch Chorzów
+Oud-Heverlee Leuven
+Jagiellonia Białystok
+S.C. Olhanense
+Lech Poznań
+P. Warszawa
+Cracovia
+Évian Thonon Gaillard FC
+US Boulogne Cote D'Opale
+Novara
+KAS Eupen
+GFC Ajaccio
+FC Paços de Ferreira
+PEC Zwolle
+Leixões SC
+Go Ahead Eagles
+AC Bellinzona
+FC Penafiel
+FC Dordrecht
+FC Lausanne-Sports
+SC Cambuur
+SC Bastia
+SM Caen
+Rio Ave FC
+Estoril Praia
+Vitória Guimarães
+Córdoba CF
+Granada CF
+Sassuolo
+Neuchâtel Xamax
+Górnik Łęczna
+Polonia Bytom
+Zagłębie Lubin
+Pogoń Szczecin
+Widzew Łódź
+Śląsk Wrocław
+Zawisza Bydgoszcz
+Piast Gliwice
+Lechia Gdańsk
+Polonia Bytom
+Podbeskidzie Bielsko-Biała
+Inverness Caledonian Thistle
+Angers SCO
+FC St. Pauli
+1. FC Nürnberg
+Hertha BSC Berlin
+Bayer 04 Leverkusen
+Burnley
+Fortuna Düsseldorf
+Leicester City
+KV Mechelen
+TSG 1899 Hoffenheim
+FC Ingolstadt 04
+Odra Wodzisław
+Widzew Łódź
+Korona Kielce
+SV Darmstadt 98
+Vitesse
+Dundee FC
+Karlsruher SC
+Sevilla FC
+Getafe CF
+UD Las Palmas
+Athletic Club de Bilbao
+Arka Gdynia
+Club Brugge KV
+Cardiff City
+Moreirense FC
+1. FC Kaiserslautern
+SpVgg Greuther Fürth
+SC Freiburg
+Rayo Vallecano
+CA Osasuna
+SD Eibar
+CD Numancia
+Real Zaragoza
+FC Energie Cottbus
+FC Augsburg
+Partick Thistle F.C.
+Hamilton Academical FC
+Chelsea
+Manchester City
+Dunfermline Athletic
+SC Paderborn 07
+Portsmouth
+N.E.C.
+Southampton
+St. Johnstone FC
+Sunderland
+Waasland-Beveren
+RC Recreativo
+AS Nancy-Lorraine
+Blackpool
+Aberdeen
+Stade Brestois 29
+Atalanta
+Willem II
+De Graafschap
+Wigan Athletic
+Cagliari
+Catania
+Chievo Verona
+Empoli
+Fiorentina
+Livorno
+Palermo
+Lazio
+Rangers
+Middlesbrough
+FC Metz
+Siena
+RCD Espanyol
+Bolton Wanderers
+Real Sociedad
+Milan
+GKS Bełchatów
+KV Kortrijk
+KV Oostende
+AC Ajaccio
+Levante UD
+AJ Auxerre
+Tottenham Hotspur
+RC Lens
+Olympique de Marseille
+Ajax
+Falkirk
+Kilmarnock
+Udinese
+Wolverhampton Wanderers
+Real Betis Balompié
+FC Twente
+Boavista FC
+Sparta Rotterdam
+Real Madrid CF
+FC Barcelona
+RSC Anderlecht
+Inter
+LOSC Lille
+PSV
+Ross County FC
+Liverpool
+West Ham United
+Blackburn Rovers
+Birmingham City
+West Bromwich Albion
+RCD Mallorca
+Hull City
+Everton
+Legia Warszawa
+FC Groningen
+Bournemouth
+Le Mans FC
+Roma
+FC Lorient
+Reggio Calabria
+Racing Santander
+SV Werder Bremen
+VfL Wolfsburg
+1. FC Köln
+Le Havre AC
+En Avant de Guingamp
+Olympique Lyonnais
+NAC Breda
+Gil Vicente FC
+Sporting CP
+União de Leiria, SAD
+SL Benfica
+FC Porto
+Eintracht Braunschweig
+Servette FC
+RC Deportivo de La Coruña
+Borussia Mönchengladbach
+Borussia Dortmund
+Hamburger SV
+Heracles Almelo
+Reading
+St. Mirren
+Roda JC Kerkrade
+Torino
+CF Os Belenenses
+Naval 1° de Maio
+Eintracht Frankfurt
+Watford
+FC Bayern Munich
+FC Vaduz
+Arsenal
+Crystal Palace
+Girondins de Bordeaux
+AS Monaco
+FC Nantes
+OGC Nice
+Dijon FCO
+Stade de Reims
+VVV-Venlo
+Paris Saint-Germain
+Norwich City
+Stade Rennais FC
+AS Saint-Étienne
+Grenoble Foot 38
+Bologna
+Brescia
+Heart of Midlothian
+Málaga CF
+UD Almería
+CD Tenerife
+Xerez Club Deportivo
+Real Sporting de Gijón
+Valenciennes FC
+FC Sochaux-Montbéliard
+Napoli
+Hellas Verona
+Pescara
+Fulham
+Cesena
+Sampdoria
+Juventus
+Lecce
+Frosinone
+Hannover 96
+1. FSV Mainz 05
+Atlético Madrid
+FC Utrecht
+RC Celta de Vigo
+VfL Bochum
+DSC Arminia Bielefeld
+Celtic
+Motherwell
+FC Aarau
+FC Basel
+Dundee United
+Toulouse FC
+Grasshopper Club Zürich
+Bari
+KSV Cercle Brugge
+Standard de Liège
+Sporting Charleroi
+KRC Genk
+Lierse SK
+KAA Gent
+Beerschot AC
+Sporting Lokeren
+Royal Excel Mouscron
+Sint-Truidense VV
+RAEC Mons
+KSV Roeselare
+SV Zulte-Waregem
+KVC Westerlo
+Swansea City
+Parma
+Queens Park Rangers
+FC Sion
+FC Schalke 04
+FC St. Gallen
+FC Thun
+BSC Young Boys
+Stoke City
+FC Luzern
+Villarreal CF
+SC Beira Mar
+CS Marítimo
+CD Nacional
+Académica de Coimbra
+ADO Den Haag
+Excelsior
+RKC Waalwijk
+SC Heerenveen
+AZ
+Genoa
+Feyenoord
+Vitória Setúbal
+ES Troyes AC
+FC Zürich
+Montpellier Hérault SC
+Hibernian
+Aston Villa
+Manchester United
+Newcastle United
+SC Braga
+Wisła Kraków
+Valencia CF
+Elche CF
+VfB Stuttgart
+Hércules Club de Fútbol
+Real Valladolid
+AC Arles-Avignon
+FC Arouca
+Carpi
+Royal Excel Mouscron
+Real Madrid
+Konyaspor
+Erzincanspor
+Adana Demirspor
+Adanaspor
+Afjet Afyonspor
+Akhisarspor
+Alanyaspor
+Altay
+Altınordu
+Amed S.K.
+Ankara Demirspor
+Ankaragücü
+Ankara Keçiörengücü
+Ankaraspor
+Antalyaspor
+BB Bodrumspor
+BB Erzurumspor
+Balıkesirspor
+Bandırmaspor
+Bayburt Özel İdarespor
+Beşiktaş
+Boluspor
+Bursaspor
+Çaykur Rizespor
+Çorum FK
+Denizlispor
+Elazığspor
+Ergene Velimeşe	Velimeşe
+Eskişehirspor
+Etimesgut Belediyespor
+Eyüpspor
+Fatih Karagümrük
+Fenerbahçe
+Galatasaray	
+Gaziantep F.K.
+Gençlerbirliği
+Giresunspor
+Göztepe
+Gümüşhanespor
+Hacettepe
+Hatayspor
+Hekimoğlu Trabzon
+İnegölspor
+İstanbul Başakşehir
+İstanbulspor
+Kahramanmaraşspor
+Karacabey Belediyespor
+Kardemir Karabükspor
+Kasımpaşa
+Kastamonuspor
+Kayserispor
+Kırklarelispor
+Kırşehir Belediyespor
+Kocaelispor
+Konyaspor
+Mamak FK
+Manisa FK
+Niğde Anadolu
+Pazarspor
+Pendikspor
+Sakaryaspor
+Samsunspor
+Sancaktepe FK
+Şanlıurfaspor
+Sarıyer	Istanbul
+Serik Belediyespor
+Sivas Belediyespor
+Sivasspor
+Tarsus İdman Yurdu
+Trabzonspor
+Turgutluspor
+Tuzlaspor
+Ümraniyespor
+Uşakspor
+Vanspor FK
+Yeni Malatyaspor
+Zonguldak Kömürspor
+Anadolu Efes
+Efes Pilsen
+Fenerbahçe
+Fenerbahçe SK
+Fenerbahçe Beko
+Tofaş
+Bahçeşehir Koleji
+Aliağa Petkim Spor
+Büyükçekmece Basketbol
+Darrüşafaka
+Darrüşafaka Tekfen
+Gaziantep Basketbol
+Afyon Belediyesi
+Lokman Hekim Fethiye Belediye Spor
+Fethiyespor
+Muğlaspor
+Türk Telekom
+Pınar Karşıyaka
+Ormanspor
+Golden State Warriors
+Housten Rockets
+Los Angeles Lakers
+Boston Celtics
+Cleveland Cavaliers
+Washington Wizards
+Detroit Pistons
+Atlanta Hawks
+Indiana Pacers
+Miami Heat
+Los Angeles Clippers
+Orlando Magic
+Utah Jazz
+Sacramento Kings
+Dallas Mavericks
+San Antonio Spurs
+Phonenix Suns
+Denver Nuggets
+Milwakue Bucks
+Charlotte Hornets
+New Orleans Pelicans
+Chicago Bulls
+Toronto Raptors
+New York Knicks
+Philadelphia 76ers
+Brooklyn Nets
+Portland Trail Blazers
+Minnesota Timberwolves
+Memphis Grizzles
+Oklahoma City Thunder 

@@ -1,0 +1,64 @@
+Prof. Dr.
+Prof.
+Doç. Dr.
+Op. Dr.
+Dr.
+Uz. Dr.
+Cumhurbaşkanı
+Belediye Başkanı
+Vali
+Başbakan
+Kaymakam
+Orgeneral
+Korgeneral
+Tümgeneral
+Tuğgeneral
+Albay
+Yarbay
+Binbaşı
+Yüzbaşı
+Üsteğmen
+Teğmen
+Asteğmen
+Genel Başkanı
+Müdürü
+Profesör
+Arş. Gör.
+Öğr. Ü
+Ord. Prof.
+Okt.
+Çev.
+Cumhuriyet Meclisi Başkanı
+T.C. Büyükelçisi
+Yüksek Mahkeme Başkanı
+Başbakan Yardımcısı
+Ekonomi Bakanı
+Turizm Bakanı
+Kültür VE Spor Bakanı
+Ana Muhalefet Partisi Başkanı
+Bakanlar Kurulu Üyeleri
+Dışişleri Bakanı
+Maliye Bakanı
+İçişleri Bakanı
+Bayındırlık ve Ulaştırma Bakanı
+Milli Eğitim Bakanı
+Gıda, Tarım VE Enerji Bakanı
+Sağlık Bakanı
+Çalışma ve Sosyal Güvenlik Bakanı
+Çevre ve Doğal Kaynaklar Bakanı
+Başsavcı
+Parti Başkanı
+Genel Başkanı
+Müdürümüz  
+Başkomutan
+Cumhurbaşkanlığı Sözcüsü
+Milletvekili
+Cumhurbaşkanlığı Müsteşarı
+TC Büyükelçiliği Müsteşarı
+MİT Müsteşarı
+Polis Genel Müdürü
+Milletvekilleri
+Sayın
+Sevgili
+Başkanvekili
+Başkan

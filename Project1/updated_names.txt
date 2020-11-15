@@ -1,8 +1,11 @@
 ATATÜRK
+Hisarcıklıoğlu
+Gülışık
 Bill
 Gates
 Steve
 Jobs
+Çiller
 Michael
 Jacson
 Steven
@@ -1578,6 +1581,7 @@ Bertan
 Besalet
 Besamet
 Besat
+Beşar
 Beşaret
 Beşarettin
 Betülay
@@ -4279,7 +4283,6 @@ Rakibe
 Rakide
 Rakime
 Rakip
-Ramazan
 Rami
 Ramis
 Ramiye

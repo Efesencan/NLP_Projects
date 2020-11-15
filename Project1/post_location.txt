@@ -12,8 +12,6 @@ Parkı
 Meydanı
 Stadyumu
 Arena
-Restoran
-Restoranı
 Yeri
 Konağı
 Sarayı
@@ -34,3 +32,10 @@ Mezarları
 Köyü
 Ormanı
 Koyu
+Kanalı
+Boğazı
+Manastırı
+Garı
+Kasabası
+İstasyonu
+Mah.

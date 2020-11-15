@@ -1638,7 +1638,6 @@ Albigowa
 Albin
 Albina
 Albinea
-Albino
 Albiolo
 Albion
 Albisola Marina
@@ -5196,7 +5195,6 @@ Bakhchysaray
 Bakhmach
 Bakhri Ahmad Khan
 Bakhtiyarpur
-Baki
 Bakixanov
 Baklan
 Bako
@@ -10691,6 +10689,7 @@ Budakeszi
 Budanovci
 Budaors
 Budapest
+Budapeşte
 Budapest I. Keruelet
 Budapest Ii. Keruelet
 Budapest Iii. Keruelet
@@ -32661,6 +32660,66 @@ Kabasalan
 Kabatas
 Kabaty
 Kabba
+Kabil
+Tiran
+Cezayir
+Erivan
+Viyana
+Bakü
+Dakka
+Brüksel
+Saraybosna
+Gaboron
+Sofya
+Praya
+Encemine
+Pekin
+Lefkoşa
+Prag
+Kopenhag
+Cibuti
+Quito
+Kahire
+Tiflis
+Atina
+Guatemala
+Budapeşte
+Cakarta
+Tahran
+Bağdat
+Seul
+Kuveyt
+Bişkek
+Beyrut
+Trablus
+Lüksemburg
+Üsküp
+Nuakşot
+Monako
+Kişinev
+Ulanbatur
+Nay Pyi Daw
+Katmandu
+İslamabad
+Panama
+Varşova
+Lizbon
+Bükreş
+Moskova
+Riyad
+Belgrad
+Singapur
+Hartum
+Şam
+Duşanbe
+Darüsselam
+Nakualofa
+Tunus
+Aşkabat
+Abu Dabi
+Taşkent
+Vatikan
+Sana
 Kabilauan
 Kabin Buri
 Kabinda
@@ -46135,6 +46194,7 @@ Mosjoen
 Moskhaton
 Moskovskiy
 Moskovskoye
+Moskova
 Mosman
 Mosman Park
 Mosna
@@ -50300,7 +50360,6 @@ Octeville-sur-mer
 Ocu
 Ocuituco
 Ocumare Del Tuy
-Oda
 Odakra
 Odala
 Odanah
@@ -58975,6 +59034,7 @@ Rollinsford
 Rollinsville
 Rolo
 Roma
+Mogadişu
 Roma-los Saenz
 Romagnano Sesia
 Romagnat
@@ -61087,7 +61147,6 @@ Samus
 Samut Prakan
 Samut Sakhon
 Samut Songkhram
-San
 San Acacia
 San Adrian
 San Agustin
@@ -77984,7 +78043,6 @@ Yerbabuena
 Yerbogachen
 Yerevan
 Yereymentau
-Yeri
 Yerington
 Yerkes
 Yerkoy

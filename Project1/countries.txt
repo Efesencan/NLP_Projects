@@ -38,6 +38,8 @@ Bhutan
 Bilinmeyen veya Geçersiz Bölge
 Birleşik Arap Emirlikleri
 Birleşik Krallık
+Büyük Britanya
+Britanya
 Bolivya
 Bosna Hersek
 Botsvana
@@ -116,6 +118,7 @@ Irak
 İsveç
 İsviçre
 İtalya
+İngiltere
 İzlanda
 Jamaika
 Japonya

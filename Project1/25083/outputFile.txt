@@ -1,0 +1,138 @@
+Line 1: TIME 07/09/1999
+Line 1: TIME 12.03.1925
+Line 1: TIME 2000
+Line 1: TIME 12 Eylül Pazartesi
+Line 1: TIME 9 Eylül Cuma
+Line 1: TIME 14 Ocak
+Line 1: TIME 31 Mart
+Line 1: TIME 12 Eylül 1235
+Line 1: TIME 1938
+Line 2: PERSON Efe Þencan
+Line 2: PERSON Ayþe K. Coþkun
+Line 2: PERSON Arzu Þencan
+Line 2: PERSON Burak Aksar
+Line 2: PERSON Recep Tayyip Erdoðan
+Line 2: PERSON Ali Yerlikaya
+Line 3: PERSON Binali Yýldýrým
+Line 3: PERSON Hulusi Akar
+Line 3: PERSON Süleyman Soylu
+Line 3: PERSON Veli
+Line 3: PERSON Fatma
+Line 3: PERSON Ali
+Line 4: ORGANIZATION CHP Grup
+Line 4: PERSON Özgür Özel
+Line 5: PERSON Efe
+Line 6: PERSON Efe Yýlmaz
+Line 7: PERSON Ahmet
+Line 7: PERSON Ayþe
+Line 8: PERSON Reyyan Yeniterzi
+Line 10: TIME 1957
+Line 10: TIME 1913
+Line 10: TIME 1876
+Line 10: TIME 1936
+Line 11: TIME 1913
+Line 11: PERSON Eylül
+Line 12: TIME 1999
+Line 12: ORGANIZATION Sabancý Üniversitesi
+Line 12: PERSON Tosun Terzioðlu
+Line 13: LOCATION Ýstanbul
+Line 13: LOCATION Tuzla
+Line 14: PERSON Yusuf Leblebici
+Line 15: PERSON Bahattin Bostancý
+Line 16: PERSON Recep Tayyip Erdoðan
+Line 18: PERSON Deniz Çizmeci
+Line 19: PERSON Orhan
+Line 20: PERSON Saygýlý Kerem
+Line 22: PERSON Emel Sayýn
+Line 23: PERSON Efe
+Line 24: PERSON Ece
+Line 25: PERSON Ege
+Line 26: PERSON Mustafa Kemal Atatürk
+Line 27: LOCATION Türkiye
+Line 27: LOCATION Belçika
+Line 27: LOCATION ABD
+Line 27: LOCATION Ýzmir
+Line 27: LOCATION Karabaðlar
+Line 27: LOCATION Boston
+Line 27: LOCATION Ege Bölgesi
+Line 27: LOCATION Amerika Birleþik Devletleri
+Line 28: LOCATION Ýstanbul
+Line 28: LOCATION Ankara
+Line 28: LOCATION Ýzmir
+Line 28: LOCATION Hatay
+Line 28: LOCATION Afrika
+Line 29: LOCATION Gazi Bulvarý
+Line 29: LOCATION Konak Meydaný
+Line 29: LOCATION Þükrü Saracoðlu Stadyumu
+Line 29: LOCATION Ali'nin Yeri
+Line 29: LOCATION Ilýca Plajý
+Line 29: LOCATION Kaz Daðlarý
+Line 29: LOCATION Ihlara Vadisi
+Line 29: LOCATION Cennet Koyu
+Line 30: TIME 13 Ekim
+Line 30: LOCATION Konak
+Line 30: PERSON Ekrem Ýmamoðlu
+Line 30: PERSON Efe Þencan
+Line 31: LOCATION Türkiye
+Line 31: PERSON Kazmani
+Line 31: PERSON Ýran
+Line 32: TIME 12 Aralýk
+Line 32: LOCATION Kayseri
+Line 32: LOCATION Bursa
+Line 32: PERSON Tunç Soyer
+Line 33: TIME 1954
+Line 33: LOCATION Rize
+Line 33: PERSON Recep Tayyip Erdoðan
+Line 34: PERSON Ahmet Necdet Sezer
+Line 35: LOCATION Ankara
+Line 36: PERSON Efe Bey
+Line 36: PERSON Umur
+Line 36: PERSON Ayþe
+Line 37: ORGANIZATION Koç Holding
+Line 37: ORGANIZATION Radyo ve Televizyon Üst Kurulu
+Line 37: ORGANIZATION Yönetim Kurulu
+Line 37: ORGANIZATION Çikolata Fabrikasý
+Line 37: ORGANIZATION Fenerbahçe Spor Kulübü
+Line 38: ORGANIZATION Dokuz Eylül Üniversitesi
+Line 38: ORGANIZATION Týp Fakültesi
+Line 38: ORGANIZATION Anayasa Mahkemesi
+Line 38: ORGANIZATION CHP
+Line 38: ORGANIZATION NATO
+Line 38: ORGANIZATION BP
+Line 38: ORGANIZATION AP
+Line 38: ORGANIZATION AKP
+Line 38: ORGANIZATION WHO
+Line 38: ORGANIZATION UNICEF
+Line 38: ORGANIZATION PKK
+Line 38: ORGANIZATION YÖK
+Line 38: ORGANIZATION ÖSYM
+Line 39: ORGANIZATION Koç Holding
+Line 39: ORGANIZATION A Haber
+Line 39: PERSON Ali Koç
+Line 40: ORGANIZATION Google
+Line 40: ORGANIZATION Facebook
+Line 40: PERSON Mark Zuckerberg
+Line 41: ORGANIZATION Pozitif ve Açýk Radyo
+Line 42: PERSON Berat Albayrak
+Line 43: ORGANIZATION Dokuz Eylül Hastanesi
+Line 44: LOCATION Fenerbahçe
+Line 45: ORGANIZATION Ege Üniversitesi
+Line 45: ORGANIZATION Balkan Konferansý
+Line 45: PERSON Ahmet
+Line 45: PERSON Ayþe
+Line 46: TIME 2020
+Line 46: TIME 1999
+Line 46: LOCATION San Francisco
+Line 46: LOCATION San Diego
+Line 46: LOCATION New York
+Line 46: ORGANIZATION Microsoft
+Line 46: PERSON Sinan Güler
+Line 47: TIME 13 Aralýk Salý
+Line 47: ORGANIZATION Anayasa Mahkemesi
+Line 47: LOCATION New York
+Line 47: ORGANIZATION TBMM
+Line 47: ORGANIZATION Facebook
+Line 47: PERSON Bülent Ecevit
+Line 47: PERSON Ecevit
+Line 48: PERSON LeBron James
+Line 49: PERSON Çiller

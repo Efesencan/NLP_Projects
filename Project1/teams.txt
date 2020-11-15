@@ -383,3 +383,33 @@ Muğlaspor
 Türk Telekom
 Pınar Karşıyaka
 Ormanspor
+Golden State Warriors
+Housten Rockets
+Los Angeles Lakers
+Boston Celtics
+Cleveland Cavaliers
+Washington Wizards
+Detroit Pistons
+Atlanta Hawks
+Indiana Pacers
+Miami Heat
+Los Angeles Clippers
+Orlando Magic
+Utah Jazz
+Sacramento Kings
+Dallas Mavericks
+San Antonio Spurs
+Phonenix Suns
+Denver Nuggets
+Milwakue Bucks
+Charlotte Hornets
+New Orleans Pelicans
+Chicago Bulls
+Toronto Raptors
+New York Knicks
+Philadelphia 76ers
+Brooklyn Nets
+Portland Trail Blazers
+Minnesota Timberwolves
+Memphis Grizzles
+Oklahoma City Thunder 
