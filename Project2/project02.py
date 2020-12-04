@@ -22,7 +22,6 @@ def create_ZiphsPlot(documents, output_path): # create Zips plot
             else:
                 freq_dict[word] += 1
   
-
     freq_list = []
     for value in sorted(freq_dict.values(),reverse= True):
         freq_list.append(math.log2(value))
