@@ -25,7 +25,7 @@ if __name__ == "__main__":
     
     
     wordcloud_outputfile = "outputs/project2_wordcloud.png"
-    #project02.create_WordCloud(Docs,8,wordcloud_outputfile,mode="TFIDF",stopwords=True)
+    project02.create_WordCloud(Docs,8,wordcloud_outputfile,mode = "TFIDF",stopwords = True)
     print("WordCloud function worked!")
 
     zips_outputfile = "outputs/project2_zips.png"
@@ -36,8 +36,8 @@ if __name__ == "__main__":
     project02.create_HeapsPlot(Docs,heaps_outputfile)
     print("Heaps' Law function worked!")
 
-    #LM3_MLE = project02.create_LanguageModel(Docs,model_type="MLE",ngram=3)
-    #sentence,perplexity = project02.generate_sentence(LM3_MLE,text="milli")   
+    LM3_MLE = project02.create_LanguageModel(Docs,model_type="MLE",ngram=3)
+    sentence,perplexity = project02.generate_sentence(LM3_MLE,text="milli")   
     #print(sentence,perplexity)
 
     #LM3_KneserNeyInterpolated = project02.create_LanguageModel(Docs,model_type="KneserNeyInterpolated",ngram=3)
